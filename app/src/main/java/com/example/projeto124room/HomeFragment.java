@@ -52,7 +52,21 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
                 break;
             case R.id.buttonExcUsu:
+                MainActivity.fragmentManager.beginTransaction().
+                        replace(R.id.frame_layout, new DeletarUsuarioFragment()).
+                        commit();
+                break;
 
+            case R.id.buttonAltUs:
+                MainActivity.fragmentManager.beginTransaction().
+                        replace(R.id.frame_layout, new AlterarUsuarioFragment()).
+                        commit();
+                break;
+
+            case R.id.buttonListUs:
+                MainActivity.fragmentManager.beginTransaction().
+                        replace(R.id.frame_layout, new ListarUsuarioFragment()).
+                        commit();
                 break;
         }
     }

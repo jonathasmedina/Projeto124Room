@@ -30,7 +30,5 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager.beginTransaction().
                 add(R.id.frame_layout, new HomeFragment()).
                 commit();
-
-
     }
 }
